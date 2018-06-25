@@ -2,10 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Pig Latinizer</title>
   </head>
   <body>
-    <h1>Pig Latinizer</h1>
-  
+    <!-- expect(last_response.body).to include("Pig Latinizer!") -->
+    <h1>Pig Latinizer!</h1>
+    <!-- expect(last_response.body).to include("<form")
+    expect(last_response.body).to include("</form>") -->
+    <form action="/piglatinize" method="post">
+    <!-- expect(last_response.body).to include("Enter your phrase:") -->
+    <!-- expect(last_response.body).to include("user_phrase") -->
+      <p>Enter your phrase: <input type="text" name="user_phrase"></p>
+    </form>
   </body>
 </html>
