@@ -1,6 +1,7 @@
 # Build a PigLatinizer model (in your models directory) that converts a string into pig latin.
 class PigLatinizer
-
+  # it 'has a method splits the sentence to piglatinize each word' do
+  #   expect(words.piglatinize("i love programming")).to eq("iway ovelay ogrammingpray")
   def piglatinize(words)
     string = []
     words_split = words.split(" ")
@@ -33,8 +34,6 @@ end
 #     x
 #   end
 #
-#   private
-#
 #   def consonant?(char)
 #     !char.match(/[aAeEiIoOuU]/)
 #   end
@@ -59,8 +58,5 @@ end
 #   def piglatinize_sentence(sentence)
 #     sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
 #   end
-#
-#
-#
 #
 # end
